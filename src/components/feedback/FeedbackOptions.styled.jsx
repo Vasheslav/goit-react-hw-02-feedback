@@ -6,5 +6,8 @@ border: 1px solid gray;
   justify-content: center;
   align-items: center;
 
+  :hover {
+    color: green;
+  }
   margin-right: 10px;
   padding: 5px 10px;`
