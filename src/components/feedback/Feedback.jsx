@@ -28,7 +28,10 @@ class Feedback extends React.Component {
     return (
       <Container>
         <Section title="Please leave feedback">
-          <FeedbackOptions onLeaveFeedBack={this.leaveFeedBack} />
+          <FeedbackOptions
+            options={Object.keys(this.state)}
+            onLeaveFeedBack={this.leaveFeedBack}
+          />
         </Section>
         <Section title="Statistics">
           {good > 0 || neutral > 0 || bad > 0 ? (
